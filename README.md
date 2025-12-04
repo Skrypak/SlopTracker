@@ -17,8 +17,11 @@ Install all dependencies (root, client, and server):
 npm install          
 ```
 This should:
+
 Install root (npm i)
+
 Install client (npm --prefix server i)
+
 Install server (npm --prefix client i)
 
 Makes sure your root level package.json contains:
@@ -33,6 +36,7 @@ Makes sure your root level package.json contains:
 ```
 
 Alternatively, run them individually:
+
 Root: 
 ```
 npm install
