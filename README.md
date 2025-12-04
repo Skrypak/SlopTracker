@@ -8,7 +8,7 @@ A task tracker made with 100% chatgpt code.
 
 After cloning the repository:
 ```
-git clone <your-repo-url>
+git clone https://github.com/Skrypak/SlopTracker.git
 cd SlopTracker
 ```
 
