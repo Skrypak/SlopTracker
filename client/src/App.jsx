@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TaskList from "./components/TaskList";
 import AddTaskForm from "./components/AddTaskForm";
+import "./styles.css";
 
 export default function App() {
   const [tasks, setTasks] = useState([
@@ -28,10 +29,14 @@ export default function App() {
   };
 
   return (
-    <div style={{ width: "300px", margin: "40px auto", fontFamily: "sans-serif" }}>
-      <h1>Task App</h1>
+    <div className="app-container">
+      <h1 className="app-title">Task App</h1>
+
       <AddTaskForm onAdd={addTask} />
-      <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
+
+      <div className="task-list-container">
+        <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
+      </div>
     </div>
   );
 }

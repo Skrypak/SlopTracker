@@ -2,6 +2,8 @@
 
 A task tracker made with 100% chatgpt code. 
 
+![UI Example](./images/UIExample.png)
+
 ## Project Structure
 
 As proposed by chatgpt

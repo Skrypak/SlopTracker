@@ -16,9 +16,14 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader",
-      }
-      // you can add rules for CSS/images here later
+        use: {
+          loader: "babel-loader",
+        },
+      },
+      {
+        test: /\.css$/,     // <── ADD THIS
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   plugins: [
