@@ -14,9 +14,22 @@ cd SlopTracker
 
 Install all dependencies (root, client, and server):
 ```
-npm install          # installs root-level tools like npm-run-all
-npm install --prefix client
-npm install --prefix server
+npm install          
+```
+This should:
+Install root (npm i)
+Install client (npm --prefix server i)
+Install server (npm --prefix client i)
+
+Makes sure your root level package.json contains:
+```
+{
+  "scripts": {
+    "install": "npm-run-all install:server install:client",
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+  }
+}
 ```
 
 Alternatively, run them individually:
