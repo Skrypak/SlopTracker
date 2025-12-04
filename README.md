@@ -106,7 +106,7 @@ project-root/
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `todo` | Get all tasks |
-| POST | `todo` | Create a new task |
-| PUT | `todo` | Update a task |
-| DELETE | `todo` | Delete a task |
+| GET | `/api/tasks` | Get all tasks |
+| POST | `/api/tasks` | Create a new task |
+| PUT | `/api/tasks/[id]` | Update a task |
+| DELETE | `/api/tasks/[id]` | Delete a task |
