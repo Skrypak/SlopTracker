@@ -1,5 +1,8 @@
+
+
 Chatgpt Proposed architecture:
-project-root/
+
+project-root/\n
 │
 ├── client/       
 │   ├── src/
