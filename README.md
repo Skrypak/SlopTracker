@@ -108,5 +108,5 @@ project-root/
 |--------|----------|-------------|
 | GET | `/api/tasks` | Get all tasks |
 | POST | `/api/tasks` | Create a new task |
-| PUT | `/api/tasks/[id]` | Update a task |
+| PATCH | `/api/tasks/[id]` | Update a task |
 | DELETE | `/api/tasks/[id]` | Delete a task |
